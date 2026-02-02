@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "titulo": "dbz",
+    "genero": "ação",
+    "descrição": "goku e suas aventuras",
+    "epísodios": 187,
+    "status": "concluido"
+  },
+  {
+    "id": 2,
+    "titulo": "re:zero",
+    "genero": "isekai",
+    "descrição": "uma adolescente sofre um acidente e vai parar em outro mundo e ele descobre que tem um poder misterioso",
+    "epísodios": 48,
+    "status": "em andamento"
+  }
+]
