@@ -58,22 +58,28 @@ def ler_id(id, lista):
 
 
 def atualizar(lista, id):
-    if 0 <= (id - 1) <= len(lista):
+    if 0 <= (id - 1) < len(lista):
         for k in lista[id-1].keys():
             if k == "id":
                 continue
 
             novo = input(f"{k} (ENTER para manter): ")
             if novo != "":
-                lista[id-1][k] = novo
+                if k == "genero":
+                    lista[id-1][k] = novo.split()
+                else:
+                    lista[id-1][k] = novo
+                
         salvar(lista)
 
     else:
         print("ID desconhecido!")
 
 def deletar(id, lista):
-    if 0 <= (id - 1) <= len(lista):
-        del lista[id-1]
+    ids = [item["id"] for item in lista]
+    if id in ids:
+        ind = ids.index(id)
+        del lista[ind]
         salvar(lista)
     else:
         print("ID desconhecido!")
@@ -84,7 +90,7 @@ def filtrar(lista):
     if opc == 1:
         genre = input("Genêro: ")
         for i in range(len(lista)):
-            if lista[i]["genero"] == genre:
+            if genre in lista[i]["genero"]:
                 print(lista[i])
 
     elif opc == 2:
@@ -113,14 +119,18 @@ while True:
         eps = int(input("Episódios: "))
         stats = input("Status: ")
 
-        verify = [title, genre, desc, eps, stats]
+        generos = genre.split()
+        verify = [title, desc, stats]
         campo_vazio = 0
         for item in verify:
-            if item.strip() == "":
+            if not item.strip():
                 campo_vazio += 1
 
-        if campo_vazio == 0:
-            criar(dados, title, genre, desc, eps, stats)
+        if not generos:
+            campo_vazio += 1
+
+        if campo_vazio == 0 and eps > 0:
+            criar(dados, title, generos, desc, eps, stats)
         else:
             print("Campos obrigátorios. Digite corretamente.")
         

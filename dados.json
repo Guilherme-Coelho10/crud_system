@@ -1,8 +1,12 @@
 [
   {
     "id": 1,
-    "titulo": "Frieren e a jornada para o além",
-    "genero": "drama, aventura, fantasia",
+    "titulo": "frieren e a jornada para o além",
+    "genero": [
+      "drama,",
+      "fantasia,",
+      "aventura"
+    ],
     "descrição": "Após derrotar o Rei Demônio ao lado de seus companheiros, a elfa Frieren parte para uma jornada solitária. Anos depois, ao retornar, ela presencia a morte de Himmel e se arrepende de não ter valorizado o tempo juntos. Movida por esse sentimento, Frieren inicia uma nova jornada para compreender melhor as pessoas e criar laços.",
     "epísodios": 28,
     "status": "Em lançamento"
@@ -10,7 +14,12 @@
   {
     "id": 2,
     "titulo": "Fullmetal alchemist",
-    "genero": "ação, aventura, drama, fantasia",
+    "genero": [
+      "ação,",
+      "aventura,",
+      "drama,",
+      "fantasia"
+    ],
     "descrição": "Edward e Alphonse Elric quebram a Lei da Troca Equivalente ao tentar a transmutação humana e sofrem graves perdas. Em busca de recuperar seus corpos, tornam-se alquimistas e passam a procurar a Pedra Filosofal, envolvendo-se em conspirações que testam sua humanidade.",
     "epísodios": 64,
     "status": "Concluído"
@@ -18,7 +27,12 @@
   {
     "id": 3,
     "titulo": "Death note",
-    "genero": "mistério, pscológico, thriller, sobrenatural",
+    "genero": [
+      "mistério,",
+      "psicológico,",
+      "thriller,",
+      "sobrenatural"
+    ],
     "descrição": "Light Yagami é um gênio do ensino médio que está prestes a aprender sobre a vida através de um livro da morte. Quando um shinigami entediado, um Deus da Morte chamado Ryuk, deixa cair um bloco de notas preto chamado Death Note, Light recebe poder sobre a vida e a morte com um simples traço de caneta. Determinado a usar esse dom sombrio para o melhor, Light parte para livrar o mundo do mal... Ou seja, as pessoas que ele acredita serem más. Alguém deveria deter esse poder?",
     "epísodios": 37,
     "status": "Concluído"
@@ -26,7 +40,11 @@
   {
     "id": 4,
     "titulo": "My hero academia",
-    "genero": "ação, aventura e comédia",
+    "genero": [
+      "ação,",
+      "aventura,",
+      "comédia"
+    ],
     "descrição": "Em um mundo onde quase todos têm superpoderes, Izuku Midoriya nasce sem nenhum, mas sonha em ser herói. Sua vida muda ao conhecer All Might, que lhe dá a chance de realizar esse sonho.",
     "epísodios": 13,
     "status": "Concluído"
@@ -34,7 +52,11 @@
   {
     "id": 5,
     "titulo": "Steins gate",
-    "genero": "drama, thriller, sci-fi",
+    "genero": [
+      "drama,",
+      "thriller,",
+      "sci-fi"
+    ],
     "descrição": "Okabe e seus amigos criam um aparelho capaz de enviar mensagens ao passado, mudando a história. Ao brincar com o tempo, eles enfrentam graves consequências.",
     "epísodios": 24,
     "status": "Concluído"
